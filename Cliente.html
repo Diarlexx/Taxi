@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLIENTE | Carnot Express</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #ffffff;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn, input[type="date"] {
+      background: transparent;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 0.3rem;
+      text-transform: uppercase;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #00ff00;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th {
+      background-color: #002200;
+      color: #ffffff;
+    }
+    .total {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #00ff00;
+    }
+    .credits {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CLIENTE - Carnot Express 🚕</h1>
+
+  <div class="controls">
+    <label for="fecha">Buscar por fecha:</label>
+    <input type="date" id="fecha" name="fecha" />
+    <button class="btn" onclick="window.print()">IMPRIMIR</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Pasajeros</th>
+        <th>Detalle</th>
+        <th>Tipo</th>
+        <th>Estado</th>
+        <th>Costo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-10-24</td>
+        <td>05:20 PM</td>
+        <td>Caleb, Ethan, K. Torres</td>
+        <td>General</td>
+        <td>Ida</td>
+        <td>Realizada</td>
+        <td>$23.00</td>
+      </tr>
+      <tr>
+        <td>2025-10-20</td>
+        <td>06:30 PM</td>
+        <td>Inglés</td>
+        <td>English class</td>
+        <td>Ida</td>
+        <td>Realizada</td>
+        <td>$10.00</td>
+      </tr>
+      <tr>
+        <td>2025-10-22</td>
+        <td>06:10 PM</td>
+        <td>Ethan, Batan</td>
+        <td>Math class</td>
+        <td>Regreso</td>
+        <td>Realizada</td>
+        <td>$35.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="total">Total acumulado: $68.00</div>
+
+  <div class="credits">
+    Diseñado por Copilot 🤖 gracias a Diego Sarango 🥷🏻<br>
+    📧 diego.sarango@email.com | 🚕 Taxi #123
+  </div>
+
+</body>
+          </html>
